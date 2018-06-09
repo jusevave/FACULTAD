@@ -1,0 +1,16 @@
+ language:
+      - java
+  jdk:
+      - jdk 1.8
+      - apache toncat 8.0.27.0
+  script:
+      - mvn clean test 
+  cache:
+      directories:
+          - $HOME/.m2
+  dist:
+      - trusty
+  sudo:
+      - false
+  notifications:
+      - email: fonsecajuancamilo@gmail.com
